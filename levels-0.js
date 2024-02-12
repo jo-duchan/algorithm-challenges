@@ -19,9 +19,9 @@ function incrementOrDecrement(a, b, flag) {
   return flag ? a + b : a - b;
 }
 
-// incrementOrDecrement(-4, 7, true)
+// incrementOrDecrement(-4, 7, true);
 // 3
-// incrementOrDecrement(-4, 7, false)
+// incrementOrDecrement(-4, 7, false);
 // -11
 
 // n의 배수
@@ -30,7 +30,18 @@ function multiplesOfNumber(num, n) {
   return num % n === 0 ? 1 : 0;
 }
 
-// multiplesOfNumber(98, 2)
+// multiplesOfNumber(98, 2);
 // 1
-// multiplesOfNumber(34, 3)
+// multiplesOfNumber(34, 3);
 // 0
+
+// 문자열을 정수로 변환하기
+
+function StringToInteger(str) {
+  return parseInt(str);
+}
+
+// StringToInteger("10");
+// 10
+// StringToInteger("8542");
+// 8542
