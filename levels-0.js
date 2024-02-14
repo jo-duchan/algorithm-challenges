@@ -65,3 +65,21 @@ function nTheNthElement(num_list, n) {
 // [2]
 // nTheNthElement([5, 2, 1, 7, 5], 3);
 // [5, 2, 1]
+
+// 문자열 돌리기
+
+function changeTextVertical(str) {
+  let result = "";
+
+  if (str.length === 1) {
+    return str[0];
+  }
+
+  return result + `${str[0]}\n` + changeTextVertical(str.slice(1));
+}
+
+// changeTextVertical("abcd")
+// a
+// b
+// c
+// d
