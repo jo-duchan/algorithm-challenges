@@ -110,3 +110,17 @@ function overwrite(str, over_str, n) {
 
 // overwrite("He11oWor1d", "lloWorl", 2);
 // HelloWorld
+
+// 문자열 섞기
+
+function mixString(str1, str2) {
+  let result = "";
+
+  for (let i = 0; i < str1.length; i++) {
+    result += str1[i] + str2[i];
+  }
+
+  return result;
+}
+
+mixString("aaaaa", "bbbbb");
