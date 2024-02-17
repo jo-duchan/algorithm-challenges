@@ -143,3 +143,12 @@ function multiplicationOfStrings(str, n) {
 
 // multiplicationOfStrings("string", 3);
 // stringstringstring
+
+// 더 크게 합치기
+
+function returnALargerValue(a, b) {
+  return Math.max(parseInt(`${a}${b}`), parseInt(`${b}${a}`));
+}
+
+// returnALargerValue(89, 8);
+// 898
