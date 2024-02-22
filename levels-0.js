@@ -364,3 +364,30 @@ function lastTwoNumbers(num_list) {
 // [ 2, 1, 6, 5 ]
 // lastTwoNumbers([5, 2, 1, 7, 5]);
 // [ 5, 2, 1, 7, 5, 10 ]
+
+// 수 조작하기 1
+
+function numberControl(n, control) {
+  let result = n;
+  [...control].map((str) => {
+    switch (str) {
+      case "w":
+        result += 1;
+        return;
+      case "s":
+        result -= 1;
+        return;
+      case "d":
+        result += 10;
+        return;
+      case "a":
+        result -= 10;
+        return;
+    }
+  });
+
+  return result;
+}
+
+// numberControl(0, "wsdawsdassw");
+// -1
