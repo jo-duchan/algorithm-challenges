@@ -486,3 +486,12 @@ function sequenceAndIntervalQuery4(arr, queries) {
 
 // sequenceAndIntervalQuery4([0, 1, 2, 4, 3],[[0, 4, 1],[0, 3, 2],[0, 3, 3],]);
 // [ 3, 2, 4, 6, 4 ]
+
+// 문자열로 변환
+
+function convertString(n) {
+  return n.toString();
+}
+
+// convertString(123);
+// 123
