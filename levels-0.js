@@ -512,3 +512,16 @@ function createArrays(l, r) {
 
 // createArrays(5, 5005);
 // [5, 50, 55, 500, 505, 550, 555]
+
+// 카운트 업
+
+function countUp(start, end) {
+  const result = [];
+  for (let i = start; i <= end; i++) {
+    result.push(i);
+  }
+
+  console.log(result);
+}
+
+countUp(3, 10);
