@@ -628,3 +628,18 @@ function diceGame3(a, b, c, d) {
 // 27
 // diceGame3(2, 5, 2, 6);
 // 30
+
+// 글자 이어 붙여 문자열 만들기
+
+function makSentences(my_string, index_list) {
+  let result = "";
+
+  index_list.forEach((s) => {
+    result += my_string[s];
+  });
+
+  return result;
+}
+
+// makSentences("zpiaz", [1, 2, 0, 0, 3]);
+// pizza
