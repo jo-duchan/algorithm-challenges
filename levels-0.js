@@ -643,3 +643,17 @@ function makSentences(my_string, index_list) {
 
 // makSentences("zpiaz", [1, 2, 0, 0, 3]);
 // pizza
+
+// 9로 나눈 나머지
+
+function divideBy9(number) {
+  let sum = 0;
+  [...number].map((x) => (sum += parseInt(x)));
+
+  return sum % 9;
+}
+
+// divideBy9("123");
+// 	6
+// divideBy9("78720646226947352489");
+// 2
