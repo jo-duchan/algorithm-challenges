@@ -770,3 +770,16 @@ function flipTheString2(string, s, e) {
 
 flipTheString2("Progra21Sremm3", 6, 12);
 // ProgrammerS123
+
+// qr code
+
+function qrcode(q, r, code) {
+  const result = Array.from(code).reduce((acc, cur, idx) => {
+    return idx % q === r ? acc + cur : acc;
+  }, "");
+
+  return result;
+}
+
+qrcode(3, 1, "qjnwezgrpirldywt");
+// jerry
