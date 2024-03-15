@@ -819,4 +819,23 @@ function theNumberOfLetters(string) {
   return alphabet;
 }
 
-theNumberOfLetters("Programmers");
+// theNumberOfLetters("Programmers");
+// [
+//   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+//   1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0,
+// ];
+
+// 배열 만들기 1
+
+function createArray1(n, k) {
+  let array = [];
+
+  for (let i = k; i <= n; i += k) {
+    array.push(i);
+  }
+
+  return array;
+}
+
+// createArray1(15, 5);
+// [ 5, 10, 15 ]
