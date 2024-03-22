@@ -854,3 +854,18 @@ function removeString(string, indices) {
 
 // removeString("apporoograpemmemprs", [1, 16, 6, 15, 0, 10, 11, 3]);
 // programmers
+
+// 카운트 다운
+
+function countDown(start, end) {
+  const result = [];
+
+  for (let i = start; i >= end; i--) {
+    result.push(i);
+  }
+
+  return result;
+}
+
+// countDown(10, 3);
+// [3, 4, 5, 6, 7, 8, 9, 10];
