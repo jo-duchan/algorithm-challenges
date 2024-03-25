@@ -869,3 +869,20 @@ function countDown(start, end) {
 
 // countDown(10, 3);
 // [3, 4, 5, 6, 7, 8, 9, 10];
+
+// 가까운 1 찾기
+
+function findACloseOne(arr, idx) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 1 && idx <= i) {
+      return i;
+    }
+  }
+
+  return -1;
+}
+
+// findACloseOne([1, 0, 0, 1, 0, 0], 4);
+// -1
+// findACloseOne([1, 1, 1, 1, 0], 3);
+// 3
