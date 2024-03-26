@@ -908,3 +908,12 @@ function listSlicer(n, slicer, num_list) {
 // [ 2, 3, 4, 5, 6 ]
 // listSlicer(4, [2, 7, 3], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 // [ 2, 5 ]
+
+// 첫 번째로 나오는 음수
+
+function firstNegativeNumber(list) {
+  return list.findIndex((x) => x < 0);
+}
+
+// firstNegativeNumber([12, 4, 15, 46, 38, -2, 15]);
+// 5
