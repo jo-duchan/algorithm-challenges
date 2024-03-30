@@ -965,4 +965,14 @@ function arrayCarve(arr, query) {
   return result;
 }
 
-arrayCarve([0, 1, 2, 3, 4, 5], [4, 1, 2]);
+// arrayCarve([0, 1, 2, 3, 4, 5], [4, 1, 2]);
+// [ 1, 2, 3 ]
+
+// n번째 원소부터
+
+function fromTheNth(num_list, n) {
+  return num_list.filter((x, i) => i + 1 >= n);
+}
+
+// fromTheNth([5, 2, 1, 7, 5], 2);
+// [ 2, 1, 7, 5 ]
