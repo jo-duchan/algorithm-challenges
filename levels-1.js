@@ -328,3 +328,14 @@ function walkInThePark(park, routes) {
 // [3, 1]
 // walkInThePark(["OXX", "XSO", "XOO"], ["E 1", "S 1"]);
 // [2, 2]
+
+// 나머지가 1이 되는 수 찾기
+
+function alwaysOneLeft(n) {
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 1) return i;
+  }
+}
+
+// alwaysOneLeft(10);
+// 3
