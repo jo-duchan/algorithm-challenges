@@ -388,3 +388,29 @@ function threesome(num) {
 
 // threesome([-2, 3, 0, 2, -5]);
 // 2
+
+// 숫자놀이
+
+function aGameOfNumbers(str) {
+  const checklist = [
+    "zero",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+  ];
+
+  const result = checklist.reduce((acc, num, idx) => {
+    return acc.replaceAll(num, idx);
+  }, str);
+
+  return parseInt(result);
+}
+
+// aGameOfNumbers("one4seveneight");
+// 1478
