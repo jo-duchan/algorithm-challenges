@@ -432,3 +432,17 @@ function priceCalculator(price, money, count) {
 
 // priceCalculator(3, 20, 4);
 // 10
+
+// 없는 숫자 더하기
+function addAnEmptyNumber(num) {
+  // 등차수열의 합
+  const arithmeticSeries = (9 * (9 + 1)) / 2;
+  const result = num.reduce((acc, cur) => {
+    return (acc += cur);
+  }, 0);
+
+  return arithmeticSeries - result;
+}
+
+// addAnEmptyNumber([5, 8, 4, 0, 6, 7, 9])
+// 6
