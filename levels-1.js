@@ -446,3 +446,14 @@ function addAnEmptyNumber(num) {
 
 // addAnEmptyNumber([5, 8, 4, 0, 6, 7, 9])
 // 6
+
+// 내적
+
+function innerProduct(a, b) {
+  const result = a.reduce((acc, cur, idx) => (acc += cur * b[idx]), 0);
+
+  return result;
+}
+
+// innerProduct([1, 2, 3, 4], [-3, -1, 0, 2]);
+// 3
