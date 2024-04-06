@@ -457,3 +457,20 @@ function innerProduct(a, b) {
 
 // innerProduct([1, 2, 3, 4], [-3, -1, 0, 2]);
 // 3
+
+// 콜라 문제
+
+function cokeProblem(a, b, n) {
+  function exchange(num) {
+    if (num < a) return 0;
+
+    const remainder = num % a;
+    const giveBack = ((num - remainder) / a) * b;
+
+    return giveBack + exchange(remainder + giveBack);
+  }
+
+  return exchange(n);
+}
+
+cokeProblem(3, 1, 20);
