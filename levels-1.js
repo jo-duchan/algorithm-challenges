@@ -605,6 +605,8 @@ function secretCode(s, skip, index) {
 // secretCode("zzzzz", "abcdefghijklmnopqrstuvwxy", 6);
 // zzzzz
 
+// 약수의 개수와 덧셈
+
 function numberAndSum(left, right) {
   let result = 0;
 
@@ -631,3 +633,19 @@ function numberAndSum(left, right) {
 
 // numberAndSum(13, 17);
 // 43
+
+// 음양 더하기
+
+function numberPlusAndMinus(absolutes, signs) {
+  const result = absolutes.reduce((acc, cur, idx) => {
+    if (signs[idx]) {
+      return (acc += cur);
+    }
+
+    return (acc -= cur);
+  }, 0);
+
+  return result;
+}
+
+numberPlusAndMinus([4, 7, 12], [true, false, true]);
