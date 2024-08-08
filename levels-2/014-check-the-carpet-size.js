@@ -1,7 +1,20 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/42842
 // 카펫
 
-function checkTheCarpetSize(brown, yellow) {}
+function checkTheCarpetSize(brown, yellow) {
+  let width = brown / 2;
+  let height = 2;
+
+  let isFinish = false;
+  while (!isFinish) {
+    width--;
+    height++;
+
+    let carpet = height * width;
+    isFinish = carpet === brown + yellow;
+  }
+  return [width, height];
+}
 
 checkTheCarpetSize(10, 2);
 
