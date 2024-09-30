@@ -1,0 +1,9 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/120826?language=javascript
+
+function solution(my_string, letter) {
+  const answer = my_string.replaceAll(letter, "");
+  return answer;
+}
+
+// solution("abcdef", "f");
+// abcde
